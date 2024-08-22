@@ -4,7 +4,7 @@
     "title": "Weather-App",
     "imageSrc": "https://img.freepik.com/free-vector/meteorology-abstract-concept-vector-illustration-met-station-meteorology-program-university-degree-weather-prediction-method-measuring-instruments-atmosphere-study-abstract-metaphor_335657-1980.jpg?t=st=1723809078~exp=1723812678~hmac=8e268a011563f1d87881ecb512cadc609cc9d79c60a6a97b8f304256caa15d84&w=740",
     "description": "This is a project made with complete React js.",
-    "demo": "https://weather-app-omega-ecru-25.vercel.app/",
+    "demo": "https://weather-app-omega-ecru-25.vercel.app",
     "source": "https://github.com/rishav161/weather-app"
   },
   {
