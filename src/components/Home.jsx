@@ -1,5 +1,5 @@
 import  { useEffect, useRef} from 'react'
-import resume from "../pdf/webResume.pdf"
+import resume from "../pdf/Rishav_Jaiswal_Resume.pdf"
 import hero from "./data/hero.json"
 import Typed from "typed.js";
 
