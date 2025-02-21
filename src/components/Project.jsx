@@ -1,4 +1,3 @@
-import React from "react";
 import project from "./data/projects.json";
 const Project = () => {
   return (
@@ -39,7 +38,7 @@ const Project = () => {
                     <a href={data.source} className="btn btn-primary">
                     Code
                     </a>
-                    <a href={data.source} className="btn btn-primary mx-3 bg-warning">
+                    <a href={data.demo} className="btn btn-primary mx-3 bg-warning">
                       Link
                     </a>
                   </div>

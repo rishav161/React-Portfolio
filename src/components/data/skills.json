@@ -12,16 +12,24 @@
     "imageSrc": "skills/js.png"
   },
   {
-    "title": "React",
+    "title": "React.js",
     "imageSrc": "skills/react.png"
   },
   {
-    "title": "Node",
+    "title": "Next.js",
+    "imageSrc": "skills/next.png"
+  },
+  {
+    "title": "Node.js",
     "imageSrc": "skills/node.png"
   },
   {
     "title":"Python",
     "imageSrc":"skills/python.jpeg"
+  },
+  {
+    "title": "Java",
+    "imageSrc": "skills/java.png"
   },
   {
     "title": "PostgreSQL",
