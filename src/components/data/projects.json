@@ -10,7 +10,7 @@
   {
     "key": 2,
     "title": "Resturant-app",
-    "imageSrc": "https://img.freepik.com/free-photo/traveling-concept-with-landmarks_23-2149153261.jpg",
+    "imageSrc": "../assets/Images/proj/dine.png",
     "description": "By Using ReactJs this website is created.(Inspired from a figma template)",
     "demo": "https://restaurant-design-two.vercel.app/",
     "source": "https://github.com/rishav161/restaurant-design"
@@ -38,5 +38,13 @@
     "description": "This is a project made with complete React.js, Styled Components, SignalR, Context API, PokeAPI",
     "demo": "https://pokedex-rose-seven-79.vercel.app/",
     "source": "https://github.com/rishav161/pokedex"
+  },
+  {
+    "key": 6,
+    "title": "Drag&Drop",
+    "imageSrc": "../assets/Images/proj/drag.png",
+    "description": "The Drag-and-Drop Builder is a web-based application that allows users to create UI layouts by dragging elements from a sidebar and dropping them into a workspace",
+    "demo": "https://drag-drop-indol.vercel.app/",
+    "source": "https://github.com/rishav161/drag-drop"
   }
 ]
