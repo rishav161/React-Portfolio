@@ -1,50 +1,128 @@
 [
   {
     "title": "HTML",
-    "imageSrc": "skills/html.png"
+    "imageSrc": "skills/html.png",
+    "proficiency": 95,
+    "category": "frontend"
   },
   {
     "title": "CSS",
-    "imageSrc": "skills/css.png"
+    "imageSrc": "skills/css.png",
+    "proficiency": 90,
+    "category": "frontend"
   },
   {
     "title": "JavaScript",
-    "imageSrc": "skills/js.png"
+    "imageSrc": "skills/js.png",
+    "proficiency": 88,
+    "category": "frontend"
   },
   {
     "title": "React.js",
-    "imageSrc": "skills/react.png"
+    "imageSrc": "skills/react.png",
+    "proficiency": 85,
+    "category": "frontend"
   },
   {
     "title": "Next.js",
-    "imageSrc": "skills/next.png"
+    "imageSrc": "skills/next.png",
+    "proficiency": 80,
+    "category": "frontend"
   },
   {
     "title": "Node.js",
-    "imageSrc": "skills/node.png"
+    "imageSrc": "skills/node.png",
+    "proficiency": 82,
+    "category": "backend"
   },
   {
     "title":"Python",
-    "imageSrc":"skills/python.jpeg"
+    "imageSrc":"skills/python.jpeg",
+    "proficiency": 75,
+    "category": "backend"
   },
   {
     "title": "Java",
-    "imageSrc": "skills/java.png"
+    "imageSrc": "skills/java.png",
+    "proficiency": 70,
+    "category": "backend"
   },
   {
     "title": "PostgreSQL",
-    "imageSrc": "skills/Postgresql.png"
+    "imageSrc": "skills/Postgresql.png",
+    "proficiency": 78,
+    "category": "database"
   },
   {
     "title": "MongoDB",
-    "imageSrc": "skills/mongodb.png"
+    "imageSrc": "skills/mongodb.png",
+    "proficiency": 80,
+    "category": "database"
   },
   {
-    "title": "Typescript",
-    "imageSrc": "skills/typescript.png"
+    "title": "MySQL",
+    "imageSrc": "https://www.mysql.com/common/logos/logo-mysql-170x115.png",
+    "proficiency": 75,
+    "category": "database"
   },
   {
-    "title": "Figma",
-    "imageSrc": "skills/figma.png"
+    "title": "Supabase",
+    "imageSrc": "https://supabase.com/favicon.ico",
+    "proficiency": 70,
+    "category": "database"
+  },
+  {
+    "title": "TypeScript",
+    "imageSrc": "skills/typescript.png",
+    "proficiency": 75,
+    "category": "frontend"
+  },
+  {
+    "title": "Prisma",
+    "imageSrc": "https://prismalens.vercel.app/header/logo.svg",
+    "proficiency": 75,
+    "category": "tools"
+  },
+  {
+    "title": "Sequelize",
+    "imageSrc": "https://sequelize.org/img/logo.svg",
+    "proficiency": 70,
+    "category": "tools"
+  },
+  {
+    "title": "Clerk Auth",
+    "imageSrc": "https://clerk.com/favicon.ico",
+    "proficiency": 65,
+    "category": "tools"
+  },
+  {
+    "title": "Postman",
+    "imageSrc": "https://www.postman.com/favicon.ico",
+    "proficiency": 80,
+    "category": "tools"
+  },
+  {
+    "title": "GitHub",
+    "imageSrc": "https://github.com/favicon.ico",
+    "proficiency": 85,
+    "category": "tools"
+  },
+  {
+    "title": "Bitbucket",
+    "imageSrc": "https://bitbucket.org/favicon.ico",
+    "proficiency": 70,
+    "category": "tools"
+  },
+  {
+    "title": "JIRA",
+    "imageSrc": "https://www.atlassian.com/favicon.ico",
+    "proficiency": 65,
+    "category": "tools"
+  },
+  {
+    "title": "Socket.IO",
+    "imageSrc": "https://socket.io/favicon.ico",
+    "proficiency": 60,
+    "category": "tools"
   }
 ]

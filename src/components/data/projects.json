@@ -1,49 +1,55 @@
 [
   {
     "key": 1,
-    "title": "Weather-App",
+    "title": "Weather App",
     "imageSrc": "https://img.freepik.com/free-vector/meteorology-abstract-concept-vector-illustration-met-station-meteorology-program-university-degree-weather-prediction-method-measuring-instruments-atmosphere-study-abstract-metaphor_335657-1980.jpg?t=st=1723809078~exp=1723812678~hmac=8e268a011563f1d87881ecb512cadc609cc9d79c60a6a97b8f304256caa15d84&w=740",
-    "description": "This is a project made with complete React js.",
+    "description": "A modern weather application built with React that provides real-time weather information. Features include location-based weather, 7-day forecasts, and responsive design with smooth animations.",
+    "technologies": ["React", "JavaScript", "Weather API", "CSS3", "Responsive Design"],
     "demo": "https://weather-app-omega-ecru-25.vercel.app/",
     "source": "https://github.com/rishav161/weather-app"
   },
   {
     "key": 2,
-    "title": "Resturant-app",
-    "imageSrc": "../assets/Images/proj/dine.png",
-    "description": "By Using ReactJs this website is created.(Inspired from a figma template)",
+    "title": "Restaurant Design",
+    "imageSrc": "https://img.freepik.com/free-photo/restaurant-interior_1127-3394.jpg",
+    "description": "A sophisticated restaurant website with modern UI/UX design. Features include menu display, online ordering system, and elegant animations inspired by professional Figma templates.",
+    "technologies": ["React", "JavaScript", "CSS3", "Figma Design", "Responsive Layout"],
     "demo": "https://restaurant-design-two.vercel.app/",
     "source": "https://github.com/rishav161/restaurant-design"
   },
   {
     "key": 3,
-    "title": "Bishnu-Avatar",
+    "title": "Bishnu Avatar",
     "imageSrc": "https://i.ibb.co/wrNycmH2/unnamed.webp",
-    "description": "This is a project made with complete React js.",
+    "description": "An interactive avatar customization application built with React. Users can create and customize digital avatars with various features and styling options.",
+    "technologies": ["React", "JavaScript", "Canvas API", "CSS3", "Interactive UI"],
     "demo": "https://react-avatar-seven.vercel.app/",
     "source": "https://github.com/rishav161/react-avatar"
   },
   {
     "key": 4,
-    "title": "Tripease",
+    "title": "Tripease - Travel & Tourism",
     "imageSrc": "https://img.freepik.com/free-photo/traveling-concept-with-landmarks_23-2149153261.jpg",
-    "description": "This is a project made with complete MERN Stack. (Tour and Travel Website)",
+    "description": "A comprehensive MERN stack travel and tourism website with integrated booking systems, payment gateways, and user authentication. Features include tour packages, booking management, and admin dashboard.",
+    "technologies": ["React", "Node.js", "MongoDB", "Express", "Payment Integration", "JWT Auth"],
     "demo": "https://github.com/sudipt-31/Tripease",
     "source": "https://github.com/sudipt-31/Tripease"
   },
   {
     "key": 5,
-    "title": "Pokedex",
+    "title": "Pokédex Application",
     "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1024px-International_Pok%C3%A9mon_logo.svg.png",
-    "description": "This is a project made with complete React.js, Styled Components, SignalR, Context API, PokeAPI",
+    "description": "A feature-rich Pokédex application that fetches and displays Pokémon data from external APIs. Includes search functionality, detailed Pokémon information, and modern UI with smooth animations.",
+    "technologies": ["React", "TypeScript", "PokeAPI", "Styled Components", "Context API"],
     "demo": "https://pokedex-rose-seven-79.vercel.app/",
     "source": "https://github.com/rishav161/pokedex"
   },
   {
     "key": 6,
-    "title": "Drag&Drop",
-    "imageSrc": "../assets/Images/proj/drag.png",
-    "description": "The Drag-and-Drop Builder is a web-based application that allows users to create UI layouts by dragging elements from a sidebar and dropping them into a workspace",
+    "title": "Drag & Drop Builder",
+    "imageSrc": "https://img.freepik.com/free-vector/drag-drop-concept-illustration_114360-8506.jpg",
+    "description": "A powerful drag-and-drop UI builder that allows users to create custom layouts by dragging elements from a sidebar into a workspace. Features include real-time preview and component customization.",
+    "technologies": ["React", "JavaScript", "Drag & Drop API", "HTML5", "CSS3"],
     "demo": "https://drag-drop-indol.vercel.app/",
     "source": "https://github.com/rishav161/drag-drop"
   }

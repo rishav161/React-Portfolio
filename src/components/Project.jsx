@@ -1,54 +1,77 @@
-import project from "./data/projects.json";
+import project from "./data/projects.json"
+import { FaGithub, FaExternalLinkAlt, FaCode, FaEye } from 'react-icons/fa'
+
 const Project = () => {
   return (
-    <>
-      <div className="container proj my-3" id="project">
-        <h1>PROJECTS</h1>
-        <div className="row d-flex justify-content-center align-content-center"  >
-          {project.map((data) => (
-            <>
-              <div
-                key={data.id}
-                className="my-4 col-sm-6 col-md-4 col-lg-3 mx-4"
-                data-aos="zoom-in"
-                data-aos-duration="1000"
-              >
-                <div
-                  className="card bg-dark text-light"
-                  style={{ width: "18rem", border: "1px solid yellow",
-                    boxShadow:'5px 5px 10px 10px rgba(101,175,10,0.5)'
-                   }}
-                >
-                  <div className="img d-flex justify-content-center align-content-center p-3">
-                    <img
-                      src={`${data.imageSrc}`}
-                      className="card-img-top"
-                      alt="..."
-                      style={{
-                        width: "250px",
-                        height: "250px",
-                        border: "2px solid yellow",
-                        borderRadius: "15px",
-                      }}
-                    />
-                  </div>
-                  <div className="card-body text-center">
-                    <h5 className="card-title">{data.title}</h5>
-                    <p className="card-text">{data.description}</p>
-                    <a href={data.source} className="btn btn-primary">
-                    Code
+    <section className="proj" id="project">
+      <div className="container">
+        <div className="section-header" data-aos="fade-up" data-aos-duration="1000">
+          <h1>Featured Projects</h1>
+          <p>A showcase of my recent work, demonstrating my skills in full-stack development and problem-solving</p>
+        </div>
+        
+        <div className="projects-grid">
+          {project.map((data, index) => (
+            <div
+              key={data.key}
+              className="project-card"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay={index * 200}
+            >
+              <div className="image-container">
+                <img
+                  src={data.imageSrc.startsWith('http') ? data.imageSrc : `/assets/Images/${data.imageSrc}`}
+                  alt={data.title}
+                />
+                <div className="image-overlay">
+                  <div className="overlay-buttons">
+                    <a href={data.demo} target="_blank" rel="noopener noreferrer" className="overlay-btn">
+                      <FaEye />
+                      <span>Live Demo</span>
                     </a>
-                    <a href={data.demo} className="btn btn-primary mx-3 bg-warning">
-                      Link
+                    <a href={data.source} target="_blank" rel="noopener noreferrer" className="overlay-btn">
+                      <FaCode />
+                      <span>View Code</span>
                     </a>
                   </div>
                 </div>
               </div>
-            </>
+              
+              <div className="content">
+                <h3>{data.title}</h3>
+                <p>{data.description}</p>
+                
+                <div className="project-tech">
+                  {data.technologies && data.technologies.map((tech, techIndex) => (
+                    <span key={techIndex} className="tech-tag">{tech}</span>
+                  ))}
+                </div>
+                
+                <div className="buttons">
+                  <a href={data.source} target="_blank" rel="noopener noreferrer" className="btn btn-outline">
+                    <FaGithub />
+                    Code
+                  </a>
+                  <a href={data.demo} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                    <FaExternalLinkAlt />
+                    Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
           ))}
         </div>
+        
+        <div className="more-projects" data-aos="fade-up" data-aos-duration="1000">
+          <p>Want to see more of my work?</p>
+          <a href="https://github.com/rishav161" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+            <FaGithub />
+            View All Projects
+          </a>
+        </div>
       </div>
-    </>
+    </section>
   );
 };
 

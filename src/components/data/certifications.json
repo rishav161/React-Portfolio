@@ -1,0 +1,19 @@
+[
+  {
+    "id": 1,
+    "title": "Complete Web Development Bootcamp",
+    "issuer": "Udemy",
+    "date": "2023",
+    "url": "https://www.udemy.com/certificate/UC-ff629c27-02b3-4a6d-a238-292a47e31f71/",
+    "description": "Comprehensive web development course covering HTML, CSS, JavaScript, Node.js, and modern web technologies"
+  },
+  {
+    "id": 2,
+    "title": "SQL, MYSQL, POSTGRESQL",
+    "issuer": "Udemy",
+    "date": "2023",
+    "url": "https://www.udemy.com/certificate/UC-a6c045d3-1c54-42d7-99eb-8287cc83f8c8/",
+    "description": "Deep dive into JavaScript fundamentals, ES6+, async programming, and modern JavaScript patterns"
+  }
+
+]

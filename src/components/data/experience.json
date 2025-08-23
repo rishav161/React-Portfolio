@@ -1,41 +1,35 @@
 [
   {
     "id": 1,
-    "role": "Senior Software Development Engineer SDE - II",
-    "organisation": "Google",
-    "startDate": "Sept, 2023",
+    "role": "Fullstack Developer",
+    "organisation": "Ishvara Tech",
+    "startDate": "Apr 2025",
     "endDate": "Present",
-    "location": "CA,United State",
+    "location": "Bhubaneswar",
     "experiences": [
-      "Worked on Google Gmail",
-      "Worked with the Google Bard Team"
+      "Designed and implemented a lead management platform with profile search, advanced filters, data import, and email/phone validation features",
+      "Built manual and automated campaign flows using a block-based automation builder and integrated a credit-based usage model",
+      "Created real-time analytics dashboards for campaign monitoring and reporting",
+      "Developed a multi-channel marketing platform from scratch to support campaigns across OTT and social media channels",
+      "Implemented onboarding flows and secure authentication; optimized backend queries and database interactions",
+      "Worked with designers, product and QA engineers to deliver features on schedule and maintain code quality through reviews and refactoring"
     ],
-    "imageSrc": "company/google.png"
+    "technologies": ["JavaScript", "React", "Node.js", "MySQL", "Sequelize", "TailwindCSS", "TypeScript", "Supabase", "PostgreSQL", "Prisma"],
+    "imageSrc": ""
   },
   {
     "id": 2,
-    "role": "Software Development Engineer SDE - I",
-    "organisation": "Mirosoft",
-    "startDate": "Aug, 2022",
-    "endDate": "Aug, 2023",
-    "location": "London, UK",
+    "role": "MERN Stack Intern",
+    "organisation": "Prep Labs",
+    "startDate": "Aug 2023",
+    "endDate": "Sept 2023",
+    "location": "Bhubaneswar",
     "experiences": [
-      "Worked on Windows 10 terminal",
-      "Worked on Window 11 Upcoming features"
+      "Built and deployed full-stack web applications using MongoDB, Express, React and Node.js",
+      "Designed and implemented RESTful APIs and integrated them with responsive React interfaces",
+      "Used Git and GitHub for version control and collaborated within the team on testing and deployment tasks"
     ],
-    "imageSrc": "company/microsoft.png"
-  },
-  {
-    "id": 3,
-    "role": "Software Development Engineer - Intern",
-    "organisation": "Netflix",
-    "startDate": "Apr, 2021",
-    "endDate": "Jun, 2022",
-    "location": "Bengluru, India",
-    "experiences": [
-      "Worked on Nextflix payment system",
-      "Helped to create UI for video player"
-    ],
-    "imageSrc": "company/netflix.png"
+    "technologies": ["React", "Node.js", "Express", "MongoDB", "Git", "GitHub"],
+    "imageSrc": ""
   }
 ]
