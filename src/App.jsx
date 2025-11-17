@@ -8,6 +8,7 @@ import Projects from "./components/Project"
 import Certifications from "./components/Certifications"
 import CodingProfiles from "./components/CodingProfiles"
 import Contact from "./components/Contact"
+import MusicPlayer from "./components/MusicPlayer"
 import Aos from "aos"
 import "aos/dist/aos.css"
 
@@ -92,6 +93,9 @@ function App() {
           ↑
         </button>
       )}
+
+      {/* Music Player */}
+      <MusicPlayer />
     </ThemeProvider>
   )
 }
