@@ -7,11 +7,12 @@
     "endDate": "Present",
     "location": "Bhubaneswar",
     "experiences": [
+      "Architected and implemented granular Role-Based Access Control (RBAC) system in a white-label SaaS platform, enabling dynamic permission management across multiple tenant organizations with custom role hierarchies",
       "Designed and implemented a lead management platform with profile search, advanced filters, data import, and email/phone validation features",
       "Built manual and automated campaign flows using a block-based automation builder and integrated a credit-based usage model",
-      "Created real-time analytics dashboards for campaign monitoring and reporting",
+      "Created real-time analytics dashboards for campaign monitoring and reporting with role-specific data visibility",
       "Developed a multi-channel marketing platform from scratch to support campaigns across OTT and social media channels",
-      "Implemented onboarding flows and secure authentication; optimized backend queries and database interactions",
+      "Implemented secure authentication with JWT, refresh tokens, and session management; optimized backend queries reducing response time by 40%",
       "Worked with designers, product and QA engineers to deliver features on schedule and maintain code quality through reviews and refactoring"
     ],
     "technologies": ["JavaScript", "React", "Node.js", "MySQL", "Sequelize", "TailwindCSS", "TypeScript", "Supabase", "PostgreSQL", "Prisma"],

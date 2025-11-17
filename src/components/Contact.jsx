@@ -1,6 +1,31 @@
 import { FaLinkedin, FaGithubSquare, FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
+import { motion } from 'framer-motion'
 
 const Contact = () => {
+  const contactItems = [
+    {
+      icon: FaEnvelope,
+      title: "Email",
+      content: "rishavjaiswal864@gmail.com",
+      link: "mailto:rishavjaiswal864@gmail.com",
+      linkText: "Send Email"
+    },
+    {
+      icon: FaMapMarkerAlt,
+      title: "Location",
+      content: "Bhubaneswar, Odisha, India",
+      linkText: "Available for remote work",
+      noLink: true
+    },
+    {
+      icon: FaGithubSquare,
+      title: "GitHub",
+      content: "@rishav161",
+      link: "https://github.com/rishav161",
+      linkText: "View Profile"
+    }
+  ]
+
   return (
     <section className="contact" id='contact'>
       <div className="container">
@@ -11,52 +36,66 @@ const Contact = () => {
         
         <div className="contact-content">
           <div className="contact-info" data-aos="fade-up" data-aos-duration="1000">
-            <div className="contact-item">
-              <div className="contact-icon-wrapper">
-                <FaEnvelope />
-              </div>
-              <div className="contact-details">
-                <h3>Email</h3>
-                <p>rishavjaiswal864@gmail.com</p>
-                <a href="mailto:rishavjaiswal864@gmail.com" className="contact-link">Send Email</a>
-              </div>
-            </div>
-            
-            <div className="contact-item">
-              <div className="contact-icon-wrapper">
-                <FaMapMarkerAlt />
-              </div>
-              <div className="contact-details">
-                <h3>Location</h3>
-                <p>Bhubaneswar, Odisha, India</p>
-                <span className="contact-link">Available for remote work</span>
-              </div>
-            </div>
-            
-            <div className="contact-item">
-              <div className="contact-icon-wrapper">
-                <FaGithubSquare />
-              </div>
-              <div className="contact-details">
-                <h3>GitHub</h3>
-                <p>@rishav161</p>
-                <a href="https://github.com/rishav161" target="_blank" rel="noopener noreferrer" className="contact-link">View Profile</a>
-              </div>
-            </div>
+            {contactItems.map((item, index) => (
+              <motion.div 
+                key={item.title}
+                className="contact-item"
+                whileHover={{ y: -4, scale: 1.02 }}
+                transition={{ duration: 0.2 }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                style={{ transitionDelay: `${index * 0.1}s` }}
+              >
+                <div className="contact-icon-wrapper">
+                  <item.icon />
+                </div>
+                <div className="contact-details">
+                  <h3>{item.title}</h3>
+                  <p>{item.content}</p>
+                  {item.noLink ? (
+                    <span className="contact-link">{item.linkText}</span>
+                  ) : (
+                    <a href={item.link} target={item.link.startsWith('http') ? "_blank" : undefined} rel="noopener noreferrer" className="contact-link">
+                      {item.linkText}
+                    </a>
+                  )}
+                </div>
+              </motion.div>
+            ))}
           </div>
           
           <div className="social-links-section" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
             <h3>Connect With Me</h3>
             <div className='contact-icon'>
-              <a href="https://www.linkedin.com/in/rishav-jaiswal-55141824a/" target="_blank" rel="noopener noreferrer" className="items">
+              <motion.a 
+                href="https://www.linkedin.com/in/rishav-jaiswal-55141824a/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="items"
+                whileHover={{ y: -8, scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+              >
                 <FaLinkedin className='icons'/>
-              </a>
-              <a href="https://github.com/rishav161" target="_blank" rel="noopener noreferrer" className="items">
+              </motion.a>
+              <motion.a 
+                href="https://github.com/rishav161" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="items"
+                whileHover={{ y: -8, scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+              >
                 <FaGithubSquare className='icons'/>
-              </a>
-              <a href="mailto:rishavjaiswal864@gmail.com" className="items">
+              </motion.a>
+              <motion.a 
+                href="mailto:rishavjaiswal864@gmail.com" 
+                className="items"
+                whileHover={{ y: -8, scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+              >
                 <FaEnvelope className='icons'/>
-              </a>
+              </motion.a>
             </div>
           </div>
         </div>
@@ -65,14 +104,26 @@ const Contact = () => {
           <h3>Let's Work Together</h3>
           <p>I'm currently available for freelance opportunities and full-time positions. Let's discuss how I can help bring your ideas to life!</p>
           <div className="cta-buttons">
-            <a href="mailto:rishavjaiswal864@gmail.com" className="btn btn-primary">
+            <motion.a 
+              href="mailto:rishavjaiswal864@gmail.com" 
+              className="btn btn-primary"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
               <FaEnvelope />
               Start a Conversation
-            </a>
-            <a href="https://github.com/rishav161" target="_blank" rel="noopener noreferrer" className="btn btn-outline">
+            </motion.a>
+            <motion.a 
+              href="https://github.com/rishav161" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn btn-outline"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
               <FaGithubSquare />
               View My Work
-            </a>
+            </motion.a>
           </div>
         </div>
       </div>

@@ -1,6 +1,15 @@
 [
   {
     "key": 1,
+    "title": "Real-Time Collaboration Dashboard",
+    "imageSrc": "https://img.freepik.com/free-vector/gradient-ui-ux-background_23-2149052117.jpg",
+    "description": "A modern full-stack collaboration platform with real-time messaging and synchronization capabilities. Features include one-to-one and group chat with typing indicators, live data sync, secure authentication with Clerk, admin-controlled group management, and dark/light theme support.",
+    "technologies": ["Next.js 16", "TypeScript", "Prisma", "Socket.IO", "Clerk", "Zustand", "Tailwind CSS"],
+    "demo": "https://realtime-collab-dashboard.vercel.app/",
+    "source": "https://github.com/rishav161/collaboration-dashboard"
+  },
+  {
+    "key": 2,
     "title": "Weather App",
     "imageSrc": "https://img.freepik.com/free-vector/meteorology-abstract-concept-vector-illustration-met-station-meteorology-program-university-degree-weather-prediction-method-measuring-instruments-atmosphere-study-abstract-metaphor_335657-1980.jpg?t=st=1723809078~exp=1723812678~hmac=8e268a011563f1d87881ecb512cadc609cc9d79c60a6a97b8f304256caa15d84&w=740",
     "description": "A modern weather application built with React that provides real-time weather information. Features include location-based weather, 7-day forecasts, and responsive design with smooth animations.",
@@ -9,7 +18,7 @@
     "source": "https://github.com/rishav161/weather-app"
   },
   {
-    "key": 2,
+    "key": 3,
     "title": "Restaurant Design",
     "imageSrc": "https://img.freepik.com/free-photo/restaurant-interior_1127-3394.jpg",
     "description": "A sophisticated restaurant website with modern UI/UX design. Features include menu display, online ordering system, and elegant animations inspired by professional Figma templates.",
@@ -18,7 +27,7 @@
     "source": "https://github.com/rishav161/restaurant-design"
   },
   {
-    "key": 3,
+    "key": 4,
     "title": "Bishnu Avatar",
     "imageSrc": "https://i.ibb.co/wrNycmH2/unnamed.webp",
     "description": "An interactive avatar customization application built with React. Users can create and customize digital avatars with various features and styling options.",
@@ -27,7 +36,7 @@
     "source": "https://github.com/rishav161/react-avatar"
   },
   {
-    "key": 4,
+    "key": 5,
     "title": "Tripease - Travel & Tourism",
     "imageSrc": "https://img.freepik.com/free-photo/traveling-concept-with-landmarks_23-2149153261.jpg",
     "description": "A comprehensive MERN stack travel and tourism website with integrated booking systems, payment gateways, and user authentication. Features include tour packages, booking management, and admin dashboard.",
@@ -36,7 +45,7 @@
     "source": "https://github.com/sudipt-31/Tripease"
   },
   {
-    "key": 5,
+    "key": 6,
     "title": "Pokédex Application",
     "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1024px-International_Pok%C3%A9mon_logo.svg.png",
     "description": "A feature-rich Pokédex application that fetches and displays Pokémon data from external APIs. Includes search functionality, detailed Pokémon information, and modern UI with smooth animations.",
@@ -45,7 +54,7 @@
     "source": "https://github.com/rishav161/pokedex"
   },
   {
-    "key": 6,
+    "key": 7,
     "title": "Drag & Drop Builder",
     "imageSrc": "https://img.freepik.com/free-vector/drag-drop-concept-illustration_114360-8506.jpg",
     "description": "A powerful drag-and-drop UI builder that allows users to create custom layouts by dragging elements from a sidebar into a workspace. Features include real-time preview and component customization.",
