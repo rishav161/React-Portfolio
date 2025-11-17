@@ -9,10 +9,29 @@ const Project = () => {
   const [activeFilter, setActiveFilter] = useState('All')
   const [showFilters, setShowFilters] = useState(false)
 
+  // Normalize technology names for matching
+  const normalizeMatch = (tech, filterValue) => {
+    const techLower = tech.toLowerCase()
+    const filterLower = filterValue.toLowerCase()
+    
+    // Handle variations
+    if (filterLower === 'next.js') {
+      return techLower.includes('next')
+    }
+    if (filterLower === 'node.js') {
+      return techLower.includes('node')
+    }
+    if (filterLower === 'react') {
+      return techLower === 'react' || techLower === 'react.js'
+    }
+    
+    return techLower === filterLower
+  }
+
   const filteredProjects = useMemo(() => {
     if (activeFilter === 'All') return project
     return project.filter(p => 
-      p.technologies && p.technologies.includes(activeFilter)
+      p.technologies && p.technologies.some(tech => normalizeMatch(tech, activeFilter))
     )
   }, [activeFilter])
 

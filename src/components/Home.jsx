@@ -8,6 +8,28 @@ import { FaDownload, FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
 const Home = () => {
   const typedRef = useRef(null)
   const [isVisible, setIsVisible] = useState(false)
+  const [experienceMonths, setExperienceMonths] = useState(0)
+
+  // Calculate experience in months from April 2025
+  useEffect(() => {
+    const startDate = new Date('2025-04-01')
+    const currentDate = new Date()
+    
+    const yearsDiff = currentDate.getFullYear() - startDate.getFullYear()
+    const monthsDiff = currentDate.getMonth() - startDate.getMonth()
+    const totalMonths = yearsDiff * 12 + monthsDiff + 1 // +1 to include current month
+    
+    // If before start date, show 0, otherwise show calculated months
+    setExperienceMonths(currentDate >= startDate ? totalMonths : 0)
+    
+    console.log('Experience calculation:', {
+      startDate: startDate.toLocaleDateString(),
+      currentDate: currentDate.toLocaleDateString(),
+      yearsDiff,
+      monthsDiff,
+      totalMonths
+    })
+  }, [])
 
   useEffect(() => {
     setIsVisible(true)
@@ -87,15 +109,15 @@ const Home = () => {
                 I'm a <span ref={typedRef} className="typed-text"></span>
               </motion.h2>
               <motion.p className="description" variants={itemVariants}>
-                Passionate software developer with 7 months of experience building modern web applications. 
+                Passionate software developer with {experienceMonths}+ months of experience building modern web applications. 
                 I specialize in React, Node.js, and full-stack development, creating scalable solutions 
                 that solve real-world problems.
               </motion.p>
               
               <motion.div className="stats" variants={statsVariants}>
                 <motion.div className="stat" whileHover={{ scale: 1.05 }}>
-                  <span className="number">7 </span>
-                  <span className="label">months Experience</span>
+                  <span className="number">{experienceMonths}+ </span>
+                  <span className="label">{experienceMonths === 1 ? 'month' : 'months'} Experience</span>
                 </motion.div>
                 {/* <motion.div className="stat" whileHover={{ scale: 1.05 }}>
                   <span className="number">27+</span>

@@ -1179,6 +1179,24 @@ button:focus-visible {
   box-shadow: var(--shadow-md);
 }
 
+.filter-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.filter-btn:disabled:hover {
+  transform: none;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+
+.filter-count {
+  font-size: 0.85em;
+  opacity: 0.8;
+  margin-left: 0.25rem;
+}
+
 .project-count {
   text-align: center;
   color: var(--text-secondary);
