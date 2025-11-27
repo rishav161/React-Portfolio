@@ -11,22 +11,48 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50)
-      
-      // Update active section based on scroll position
-      const sections = ['home', 'experience', 'skills', 'project', 'certifications', 'coding-profiles', 'contact']
-      const current = sections.find(section => {
-        const element = document.getElementById(section)
-        if (element) {
-          const rect = element.getBoundingClientRect()
-          return rect.top <= 100 && rect.bottom >= 100
-        }
-        return false
-      })
-      if (current) setActiveSection(current)
     }
 
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  // IntersectionObserver for accurate active section detection
+  useEffect(() => {
+    const sections = ['home', 'experience', 'skills', 'project', 'certifications', 'coding-profiles', 'contact']
+    
+    const observerOptions = {
+      root: null,
+      rootMargin: '-20% 0px -70% 0px', // Trigger when section is in the middle of viewport
+      threshold: 0
+    }
+
+    const observerCallback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id)
+        }
+      })
+    }
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions)
+
+    // Observe all sections
+    sections.forEach((sectionId) => {
+      const element = document.getElementById(sectionId)
+      if (element) {
+        observer.observe(element)
+      }
+    })
+
+    return () => {
+      sections.forEach((sectionId) => {
+        const element = document.getElementById(sectionId)
+        if (element) {
+          observer.unobserve(element)
+        }
+      })
+    }
   }, [])
 
   const toggleMenu = () => {

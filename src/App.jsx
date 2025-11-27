@@ -9,6 +9,7 @@ import Certifications from "./components/Certifications"
 import CodingProfiles from "./components/CodingProfiles"
 import Contact from "./components/Contact"
 import MusicPlayer from "./components/MusicPlayer"
+import MouseFollower from "./components/MouseFollower"
 import Aos from "aos"
 import "aos/dist/aos.css"
 
@@ -57,21 +58,11 @@ function App() {
   
   return (
     <ThemeProvider>
+      {/* Mouse Follower Animation - Blue dots that follow mouse across all sections */}
+      <MouseFollower />
+      
       {/* Scroll Progress Bar */}
       <div className="scroll-progress" style={{ width: `${scrollProgress}%` }}></div>
-      
-      {/* Particle Background */}
-      <div className="particles">
-        {[...Array(50)].map((_, i) => (
-          <div key={i} className="particle" style={{
-            '--delay': `${Math.random() * 20}s`,
-            '--duration': `${Math.random() * 10 + 10}s`,
-            '--size': `${Math.random() * 3 + 1}px`,
-            '--x': `${Math.random() * 100}%`,
-            '--y': `${Math.random() * 100}%`
-          }}></div>
-        ))}
-      </div>
       
       <Navbar />
       <main>

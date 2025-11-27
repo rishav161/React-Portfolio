@@ -1,0 +1,79 @@
+/* Mouse Particles Container */
+.mouse-particles-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Individual Mouse Particle */
+.mouse-particle {
+  position: fixed;
+  background: var(--primary-color);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  animation: particleFade 1s ease-out forwards;
+  box-shadow: 0 0 10px var(--primary-color);
+}
+
+/* Particle fade and float animation */
+@keyframes particleFade {
+  0% {
+    opacity: 0.8;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translate(-50%, -50%) translateY(-20px) scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) translateY(-40px) scale(0.5);
+  }
+}
+
+/* Click Bubble */
+.click-bubble {
+  position: fixed;
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  animation: bubbleSpread 1s ease-out forwards;
+  box-shadow: 0 0 20px var(--primary-color);
+  opacity: 0.8;
+}
+
+/* Bubble spread animation */
+@keyframes bubbleSpread {
+  0% {
+    opacity: 0.9;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  50% {
+    opacity: 0.6;
+    transform: translate(
+      calc(-50% + cos(var(--angle)) * var(--distance) * 0.7),
+      calc(-50% + sin(var(--angle)) * var(--distance) * 0.7)
+    ) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(
+      calc(-50% + cos(var(--angle)) * var(--distance)),
+      calc(-50% + sin(var(--angle)) * var(--distance))
+    ) scale(0.3);
+  }
+}
+
+/* Hide on mobile/tablet */
+@media (max-width: 768px) {
+  .mouse-particles-container {
+    display: none;
+  }
+}
