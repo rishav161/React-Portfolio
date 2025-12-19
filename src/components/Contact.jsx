@@ -96,16 +96,16 @@ const Contact = () => {
     setSubmitStatus(null)
 
     try {
-      // Using EmailJS (you'll need to sign up at emailjs.com and get your keys)
+      // Using EmailJS - Configured and ready to send emails
       const response = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          service_id: 'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
-          template_id: 'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
-          user_id: 'YOUR_PUBLIC_KEY', // Replace with your EmailJS public key
+          service_id: 'service_rwxj1ud',
+          template_id: 'template_un4xzep',
+          user_id: '7rWXRAOmrWQW4wQD8',
           template_params: {
             from_name: formData.name,
             from_email: formData.email,
@@ -121,6 +121,8 @@ const Contact = () => {
         setFormData({ name: '', email: '', subject: '', message: '' })
         setTimeout(() => setSubmitStatus(null), 5000)
       } else {
+        const errorData = await response.text()
+        console.error('EmailJS Error:', errorData)
         throw new Error('Failed to send message')
       }
     } catch (error) {
