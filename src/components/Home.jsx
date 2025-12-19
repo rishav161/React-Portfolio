@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { motion } from 'framer-motion'
-import resume from "../pdf/rishav_resume.pdf"
+import resume from "../pdf/Rishav_Jaiswal_Resume.pdf"
 import hero from "./data/hero.json"
 import Typed from "typed.js";
 import { FaDownload, FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
