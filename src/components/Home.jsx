@@ -132,7 +132,7 @@ const Home = () => {
               <motion.div className="cta-buttons" variants={itemVariants}>
                 <motion.a 
                   href={resume} 
-                  download="Rishav_Jaiswal.pdf" 
+                  download="Rishav_RJ.pdf" 
                   className="btn btn-primary"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
