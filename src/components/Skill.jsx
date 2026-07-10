@@ -100,15 +100,7 @@ const Skill = () => {
                         </div>
                       </div>
                       <h3>{skill.title}</h3>
-                      <div className="skill-level">
-                        <div className="progress-bar">
-                          <div 
-                            className="progress-fill" 
-                            style={{ width: `${skill.proficiency}%` }}
-                          ></div>
-                        </div>
-                        <span className="percentage">{skill.proficiency}%</span>
-                      </div>
+                      
                     </div>
                   ))}
                 </div>
@@ -143,15 +135,7 @@ const Skill = () => {
                     </div>
                   </div>
                   <h3>{skill.title}</h3>
-                  <div className="skill-level">
-                    <div className="progress-bar">
-                      <div 
-                        className="progress-fill" 
-                        style={{ width: `${skill.proficiency}%` }}
-                      ></div>
-                    </div>
-                    <span className="percentage">{skill.proficiency}%</span>
-                  </div>
+                  
                 </motion.div>
               ))}
             </div>
