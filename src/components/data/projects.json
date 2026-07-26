@@ -1,5 +1,14 @@
 [
   {
+    "key": 8,
+    "title": "KhaoPio - Restaurant POS & SaaS",
+    "imageSrc": "proj/khaopio.png",
+    "description": "A high-performance SaaS platform for restaurant POS and kitchen management. Features dynamic database-driven RBAC, real-time KOT billing with zero-dependency Web Audio API notifications, an interactive seating chart, transaction snapshot audits, and high-precision currency arithmetic using Big.js.",
+    "technologies": ["Next.js 16", "React 19", "Tailwind CSS v4", "Zustand", "Node.js", "Express", "TypeScript", "Prisma", "PostgreSQL", "Neon", "JWT Auth", "Big.js", "Web Audio API"],
+    "demo": "https://khao-pio.vercel.app/login",
+    "source": "https://github.com/rishav161/KhaoPio"
+  },
+  {
     "key": 1,
     "title": "Real-Time Collaboration Dashboard",
     "imageSrc": "https://img.freepik.com/free-vector/gradient-ui-ux-background_23-2149052117.jpg",
@@ -47,7 +56,7 @@
   {
     "key": 6,
     "title": "Pokédex Application",
-    "imageSrc": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1024px-International_Pok%C3%A9mon_logo.svg.png",
+    "imageSrc": "proj/pokemon.png",
     "description": "A feature-rich Pokédex application that fetches and displays Pokémon data from external APIs. Includes search functionality, detailed Pokémon information, and modern UI with smooth animations.",
     "technologies": ["React", "TypeScript", "PokeAPI", "Styled Components", "Context API"],
     "demo": "https://pokedex-rose-seven-79.vercel.app/",
